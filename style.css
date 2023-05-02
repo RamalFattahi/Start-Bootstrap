@@ -248,7 +248,11 @@ header nav a:hover {
 #about .right .textbox {
   text-align: start;
 }
-#about .part {
+#about .add {
+  display: flex;
+  justify-content: center;
+}
+#about .add .part {
   border-radius: 90px;
   border: 7px solid #e9ecef;
   background-color: #ffc800;
@@ -256,7 +260,7 @@ header nav a:hover {
   width: 170px;
   height: 170px;
 }
-#about .part h5 {
+#about .add .part h5 {
   font-size: 21px;
   padding: 40px;
   font-weight: 700;
@@ -271,11 +275,11 @@ header nav a:hover {
     width: 150px;
     height: 150px;
   }
-  #about .part {
+  #about .add .part {
     width: 150px;
     height: 150px;
   }
-  #about .part h5 {
+  #about .add .part h5 {
     font-size: 20px;
     padding: 32px;
   }
@@ -291,18 +295,17 @@ header nav a:hover {
     width: 100px;
     height: 100px;
   }
-  #about .part {
+  #about .add .part {
     width: 100px;
     height: 100px;
   }
-  #about .part h5 {
+  #about .add .part h5 {
     padding: 15px;
     font-size: 16px;
   }
 }
 @media screen and (max-width: 768px) {
   #about .box {
-    display: flre;
     padding: 8px;
     align-items: flex-start;
     flex-direction: row-reverse;
@@ -319,11 +322,14 @@ header nav a:hover {
   #about .right {
     flex-direction: row;
   }
-  #about .part {
+  #about .add {
+    justify-content: flex-start;
+  }
+  #about .add .part {
     width: 80px;
     height: 80px;
   }
-  #about .part h5 {
+  #about .add .part h5 {
     padding: 10px;
     font-size: 13px;
   }
@@ -488,6 +494,7 @@ footer {
 footer h1 {
   color: #5d6566;
   font-size: 18px;
+  margin: 15px 0;
 }
 footer ul {
   display: flex;
@@ -513,6 +520,7 @@ footer ul li:hover {
 footer h2, footer h3 {
   color: #5d6566;
   font-size: 18px;
+  margin: 10px 0;
 }
 footer h2:hover, footer h3:hover {
   cursor: pointer;
